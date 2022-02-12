@@ -21,8 +21,8 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "resources": ["../external/assets/raffle-default-template.svg"],
-      "externalBin": ["src-tauri\\external\\binaries\\raffle-editor-x86_64-pc-windows-msvc.exe"],
+      "resources": ["./external/assets/raffle-default-template.svg"],
+      "externalBin": ["external/binaries/raffle-editor"],
       "copyright": "",
       "category": "DeveloperTool",
       "shortDescription": "",
@@ -54,6 +54,18 @@
       "shell": {
         "execute": true,
         "sidecar": true 
+      },
+      "fs": {
+        "all": true,
+        "copyFile": false,
+        "createDir": false,
+        "readDir": true,
+        "readFile": true,
+        "removeDir": false,
+        "removeFile": false,
+        "renameFile": false,
+        "scope": [],
+        "writeFile": false
       }
     },
     "windows": [
